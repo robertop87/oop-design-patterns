@@ -2,6 +2,7 @@ package main;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
+import chapter1.exercise1_1.Greeter;
 
 /**
  *
@@ -14,7 +15,9 @@ public class MainTest {
 
     @Test
     public void testSomeMethod() {
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
+        String regard = "Good Bye";
+        assertEquals(regard, new Greeter().sayGoodBye());
     }
     
 }
